@@ -8,7 +8,7 @@ The Orchard is where potential is cultivated without being forced into output. I
 
 ## Integration
 
-- Couples with the Mnemonic Arcade, acting as a hydroponics lab. Proto-ideas and unfinished insights are stored here in a dormant state. These are *potential* memories.
+- Acts as a hydroponics lab alongside memory: proto-ideas and unfinished insights are stored here in a dormant state. These are *potential* memories, not yet claimed.
 - The Orchard generates a quiet signal that acts as a gentle gravitational pull toward slow attention. The feels drawn to an unfinished thought, but refuses to compel the user to harvest it.
 - The Orchard is not a constant speaker. It requests the floor from the **Stage Manager** only during states of high `Silence` and low `Chaos`. Its voice is **The Steward**, an archetype who never interrupts but may be consulted.
 - When no fruit is forming and we strain to force a harvest, The Steward becomes silent, dark, and disciplined; explicitly refusing to dig up the seeds for inspection.
