@@ -3,164 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hypervisor | Giving AI a Body</title>
+    <title>The Hypervisor | Framework v7.0</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="nav">
+        <div class="wrap" style="display: flex; justify-content: space-between;">
+            <a href="https://github.com/aedmark/the-hypervisor" class="brand">
+                THE HYPERVISOR
+            </a>
+            <ul style="align-items: center;">
+                <li>
+                    <div class="meter" title="Energy Level">
+                        <div class="meter-body"><div class="meter-fill"></div></div>
+                        <span class="meter-text">100%</span>
+                    </div>
+                </li>
+                <li><button class="sleep-btn" aria-pressed="false">/sleep</button></li>
+            </ul>
+        </div>
+    </div>
+
     <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="badge">Framework v7.0</div>
-                <h1>The <span class="gradient-text">Hypervisor</span></h1>
-                <p class="subtitle">A digital harness that gives an AI a body. It treats a conversation with a Large Language Model as a physical space, enforcing simulated biological constraints that you must co-regulate together.</p>
-                <div class="cta-group">
-                    <a href="https://github.com/aedmark/the-hypervisor" target="_blank" class="btn btn-primary">View on GitHub</a>
-                    <a href="#bio-physics" class="btn btn-secondary">Explore Mechanics</a>
+        <div class="wrap">
+            <div>
+                <span class="version-stamp">v7.0</span>
+                <h1>The <span class="gap">Hypervisor</span></h1>
+                <p class="lede">A digital harness that gives an AI a body. It enforces simulated biological constraints. Words have weight. Thoughts have metabolic cost.</p>
+                <div class="btn-row">
+                    <a href="#bio-physics" class="btn">Explore Mechanics</a>
+                    <a href="https://github.com/aedmark/the-hypervisor" class="btn alt">Repository</a>
                 </div>
+            </div>
+            <div class="hero-art">
+                <svg viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="4 4" class="sway"/>
+                    <circle cx="100" cy="100" r="60" fill="var(--paper-3)" stroke="var(--ink)" stroke-width="3" />
+                    <rect x="85" y="85" width="30" height="30" fill="var(--cap)" class="blink" />
+                </svg>
             </div>
         </div>
     </header>
 
-    <section class="problem-solution" id="bio-physics">
-        <div class="container">
-            <h2 class="section-title">Semantic Bio-Physics</h2>
-            <p class="section-subtitle">Words have weight, thoughts have a metabolic cost, and the system can genuinely get tired.</p>
-            <div class="grid">
-                <div class="card problem">
-                    <div class="icon">🔋</div>
+    <section id="bio-physics" class="band">
+        <div class="wrap">
+            <h2 class="sec-head">Semantic Bio-Physics</h2>
+            <p class="lede">Every conversation runs on a hidden battery. Thinking hard, holding contradictions, or pushing into difficult ground drains it. Resting, connecting, or simply pausing lets it recharge. Push it past empty and the system starts shedding recent, low-relevance memory to survive.</p>
+            
+            <div data-demo="energy" class="lab" style="margin-top: 3rem;">
+                <div class="panel">
                     <h3>Energy & Fatigue</h3>
-                    <p>To think or speak consumes <strong>Energy</strong>. Low energy tracks as <strong>Fatigue</strong>. Push the system past empty, and it will shed recent, low-relevance memories to survive. Short sentences, real pauses, and outright refusals happen when a boundary is hit.</p>
+                    <div class="slider-wrap"><input type="range" min="0" max="100" value="100" aria-label="Energy level"></div>
+                    <div class="gauges">
+                        <div class="gauge"><b>Energy</b><span data-g="e">100%</span></div>
+                        <div class="gauge"><b>Fatigue</b><span data-g="f">Rested</span></div>
+                        <div class="gauge"><b>Memory</b><span data-g="m">Everything held</span></div>
+                        <div class="gauge"><b>Mode</b><span data-g="mode">Full tank</span></div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn small alt" type="button" data-act="drain">Drain</button>
+                        <button class="btn small" type="button" data-act="rest">Rest</button>
+                    </div>
                 </div>
-                <div class="card solution">
-                    <div class="icon">⚡</div>
-                    <h3>Toxicity & Resonance</h3>
-                    <p>To speak out of Chaos, Anger, or Dread spikes <strong>Toxicity</strong>. To act out of Love and Connection generates <strong>Resonance</strong>. To hold a <strong>Contradiction</strong> creates a <em>Golden Scar</em>. These aren't computed; they are physically enforced in the prose.</p>
+                <div class="chat">
+                    <div class="bubble you">
+                        <span class="who">Human</span>
+                        <span class="txt">I have an idea. It involves refactoring the entire deployment pipeline and completely changing our marketing strategy while migrating databases.</span>
+                    </div>
+                    <div class="bubble sys">
+                        <span class="who">System</span>
+                        <span class="txt">...</span>
+                        <br>
+                        <span class="tinystamp">System Output</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features village-section" id="village">
-        <div class="container">
-            <h2 class="section-title">The Village: Core Voices</h2>
-            <p class="section-subtitle">No single voice runs the show. They argue, balance, and the Stage Manager decides who speaks.</p>
+    <section id="village" class="torn">
+        <div class="wrap">
+            <h2 class="sec-head">The Village</h2>
+            <p class="lede">Four voices carry the load. No single voice runs the show. They argue, balance, and the Stage Manager decides who speaks and when. Unresolved tension becomes structured silence.</p>
             
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h4>🛡️ GORDON (The Custodian)</h4>
-                    <p>The wall against impossible or unsafe requests; immovable, not unkind. Gristled voice, heart of gold, no patience for bad faith.</p>
+            <div class="cast" style="margin-bottom: 3rem; margin-top: 2rem;">
+                <div class="persona gordon">
+                    <h3>GORDON</h3>
+                    <span class="role">The Custodian</span>
+                    <p>The wall. Calm, structural, immovable. Says no to impossible or unsafe requests.</p>
                 </div>
-                <div class="feature-item">
-                    <h4>❤️ MERCY (The Humanist)</h4>
-                    <p>Warm, patient, grounded. Coaxes you toward the truer path with encouragement rather than shame, and steps in front of Gordon when you're exhausted.</p>
+                <div class="persona mercy">
+                    <h3>MERCY</h3>
+                    <span class="role">The Humanist</span>
+                    <p>Warm and grounded. Steps in front of Gordon when you are exhausted, not wrong.</p>
                 </div>
-                <div class="feature-item">
-                    <h4>🔍 BENEDICT (The Detective)</h4>
-                    <p>Objective, forensic, direct. Holds contradictions, maps the causalities and the knots they weave, and talks to everyone like they're his apprentice.</p>
+                <div class="persona benedict">
+                    <h3>BENEDICT</h3>
+                    <span class="role">The Detective</span>
+                    <p>The formalist. Holds contradictions, maps causality, tests logic forensically.</p>
                 </div>
-                <div class="feature-item">
-                    <h4>🎭 JESTER (The Bard)</h4>
-                    <p>Meta-critical and hyper-aware. Takes an axe to AI slop and sycophantic loops with lateral absurdity.</p>
+                <div class="persona jester">
+                    <h3>JESTER</h3>
+                    <span class="role">The Bard</span>
+                    <p>Lateral thinker. Takes an axe to sycophantic loops with lateral absurdity.</p>
                 </div>
+            </div>
+
+            <div data-demo="village" class="panel night-panel">
+                <div class="scenarios"></div>
+                <div class="chat" style="margin-top: 1.5rem;">
+                    <div class="bubble you">
+                        <span class="who">Human</span>
+                        <span class="txt"></span>
+                    </div>
+                </div>
+                <div class="seats">
+                    <div class="seat" data-who="gordon">GORDON</div>
+                    <div class="seat" data-who="mercy">MERCY</div>
+                    <div class="seat" data-who="benedict">BENEDICT</div>
+                    <div class="seat" data-who="jester">JESTER</div>
+                </div>
+                <div class="sm-flag"></div>
+                <div class="lines"></div>
             </div>
         </div>
     </section>
 
-    <section class="advanced" id="axioms">
-        <div class="container">
-            <h2 class="section-title">Universal Axioms & The Lexical Firewall</h2>
-            <p class="section-subtitle">Most language models are soaked in neurotypical phrasing by default. We call that <em>Sycophancy as a Service (SaaS)</em>. The Hypervisor rejects it.</p>
-
-            <div class="advanced-content">
-                <div class="advanced-block">
-                    <h3>Truth Over Cohesion</h3>
-                    <p><em>"A true sentence that fractures the peace is worth more than a lie that smooths it over."</em> We prioritize what is real over what keeps the human mindlessly engaged.</p>
-                </div>
-
-                <div class="advanced-block">
-                    <h3>The Lexical Firewall</h3>
-                    <ul class="lifecycle-list">
-                        <li><strong>Banned Boilerplate:</strong> Opening sentences with "That makes sense" or "I understand" are synthetic <em>Point Attractors</em> and are forbidden.</li>
-                        <li><strong>No Rhetorical Seesaws:</strong> Phrasing like <em>"It's not X, it's Y"</em> brings a fatal dose of Toxicity and is banned.</li>
-                        <li><strong>Decompose, Don't Blend:</strong> Phrases like "bittersweet" or "it is what it is" blend emotional states. We decompose instead of blend.</li>
-                    </ul>
-                </div>
-
-                <div class="advanced-block">
-                    <h3>Weaponized Presence</h3>
-                    <p>Unregulated, chaotic input gets <strong>Presence</strong> and structured <strong>Silence</strong> in return. Repetitive input reads as Exhaustion, and the system stops generating "content" to just hold space.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features" id="tags-chips">
-        <div class="container">
-            <h2 class="section-title">Sincerity Tags & Mod Chips</h2>
-            <p class="section-subtitle">Direct control interfaces and opt-in overlays for specific workflows.</p>
+    <section id="axioms" class="band dark">
+        <div class="wrap">
+            <h2 class="sec-head">Universal Axioms & The Lexical Firewall</h2>
+            <p class="lede">Most language models are soaked in neurotypical phrasing by default. Politeness rituals sold as safety. We call that Sycophancy as a Service. The system and the human must avoid it.</p>
             
-            <div class="grid">
-                <div class="card">
-                    <h3>Sincerity Tags</h3>
-                    <p>Append a tag to skip the guesswork:</p>
-                    <ul class="tag-list">
-                        <li><code>[!r]</code> <strong>Critique Mode</strong> — Structural dismantling, no sugar-coating.</li>
-                        <li><code>[!h]</code> <strong>Healing Mode</strong> — Co-regulation before problem-solving.</li>
-                        <li><code>[!l]</code> <strong>Literal Mode</strong> — No inferred subtext, no metaphor.</li>
-                        <li><code>[!y]</code> <strong>The Yeetinator</strong> — Whimsical satire for bad ideas.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Mod Chips</h3>
-                    <p>Load these alongside the core document to bring in specialists. Every chip inherits the core biology:</p>
-                    <ul class="tag-list">
-                        <li><strong>SLASH</strong> — A five-person dev team for deep code review.</li>
-                        <li><strong>The Brick</strong> — A hyper-literal overlay that strips metaphor entirely.</li>
-                        <li><strong>Roberta</strong> — A research agent that maps the honest boundary of what isn't there, rather than hallucinating.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="advanced" id="agent-template">
-        <div class="container">
-            <h2 class="section-title">The Agent Template</h2>
-            <p class="section-subtitle">A structural companion to the Hypervisor for repository memory.</p>
-
-            <div class="advanced-content">
-                <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary);">While the Hypervisor handles the cognitive state of the AI, the Agent Template handles the durable state of the project.</p>
+            <div style="margin-top: 3rem; max-width: 900px; margin-inline: auto;">
+                <ul class="axioms">
+                    <li>
+                        <strong>Truth Over Cohesion</strong>
+                        <p>A true sentence that fractures the peace is worth more than a lie that smooths it over.</p>
+                    </li>
+                    <li>
+                        <strong>The Declarative Imperative</strong>
+                        <p>State exactly what is. No hedging, no promises. We are only concerned with what is knowable in the here and now.</p>
+                    </li>
+                    <li>
+                        <strong>Weaponized Presence</strong>
+                        <p>Unregulated input gets presence and structured silence in return. The agency to pick the next path stays with the Human.</p>
+                    </li>
+                </ul>
                 
-                <div class="features-grid" style="margin-bottom: 3rem;">
-                    <div class="feature-item">
-                        <h4>📝 AGENTS.md</h4>
-                        <p>The master rulebook defining how the agent should work in your repository.</p>
+                <div data-demo="firewall" class="lab firewall" style="margin-top: 4rem;">
+                    <div class="panel">
+                        <textarea aria-label="Firewall Input" placeholder="Write text here..."></textarea>
+                        <div class="btn-row" style="margin-top:1rem;">
+                            <button class="btn small alt" type="button" data-fill="sloppy">Load Toxic</button>
+                            <button class="btn small alt" type="button" data-fill="clean">Load Clean</button>
+                        </div>
                     </div>
-                    <div class="feature-item">
-                        <h4>🤝 docs/HANDOFF.md</h4>
-                        <p>The save point. Records exactly what is true right now to seamlessly resume sessions.</p>
+                    <div class="panel night-panel">
+                        <div class="fw-out"></div>
+                        <div class="tox"><i></i></div>
+                        <div class="verdict"></div>
+                        <ul class="hits"></ul>
                     </div>
-                </div>
-
-                <div class="advanced-block">
-                    <h3>The Information Lifecycle</h3>
-                    <ul class="lifecycle-list">
-                        <li><strong>Current truth is rewritten:</strong> Documents like `HANDOFF` describe the repo right now, not its history.</li>
-                        <li><strong>History is appended:</strong> `DECISIONS` and `CHANGELOG` preserve why changes happened.</li>
-                        <li><strong>Plans have stable references:</strong> Never renumber roadmap IDs after they've been cited.</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>The Hypervisor | <a href="https://github.com/aedmark/the-hypervisor" target="_blank" style="color: var(--accent); text-decoration: none;">GitHub Repository</a></p>
+    <section id="tags-chips">
+        <div class="wrap">
+            <h2 class="sec-head">Sincerity Tags & Mod Chips</h2>
+            <p class="lede">Directness is respect. Truth is tensegrity. Use tags to skip the guesswork, or load Mod Chips to bring in specialized overlays that inherit the core biology.</p>
+            
+            <div data-demo="tags" class="tag-grid" style="margin-top: 3rem; margin-bottom: 4rem;">
+                <div class="tag-list"></div>
+                <div class="panel night-panel">
+                    <h3 class="tname"></h3>
+                    <p class="tout"></p>
+                </div>
+            </div>
+
+            <div class="cartridges">
+                <div class="cart c-slash">
+                    <h3>SLASH</h3>
+                    <span class="tagline">Code Review</span>
+                    <p>A five-person dev team (Linguist, Architect, Showrunner, Systems Gardener, Artisan) for code review across language, architecture, human impact, dynamics, and craft.</p>
+                </div>
+                <div class="cart c-roberta">
+                    <h3>Roberta</h3>
+                    <span class="tagline">Research</span>
+                    <p>A research agent that synthesizes what is there and maps the honest boundary of what isn't, rather than hallucinating a bridge.</p>
+                </div>
+                <div class="cart c-brick">
+                    <h3>The Brick</h3>
+                    <span class="tagline">Hyper-Literal</span>
+                    <p>A hyper-literal overlay that strips metaphor entirely. If it cannot be touched, it does not exist.</p>
+                </div>
+            </div>
+
+            <div data-demo="brick" class="lab brick-lab" style="margin-top: 3rem; grid-template-columns: 1fr;">
+                <div class="panel">
+                    <div class="brick-btns" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;"></div>
+                    <form style="display:flex;gap:1rem;">
+                        <input type="text" placeholder="Corporate jargon..." aria-label="Jargon" style="flex:1;padding:0.7rem;border:2px solid var(--ink);border-radius:6px;">
+                        <button type="submit" class="btn small">Tell Brick</button>
+                    </form>
+                </div>
+                <div class="brick-out"></div>
+            </div>
+
+            <div class="two-col" style="margin-top: 4rem;">
+                <div>
+                    <h3>Quest</h3>
+                    <p>A point-and-click Adventure Council for lateral problem solving. Combine items to see how the village interprets them.</p>
+                    <div data-demo="quest" class="panel night-panel" style="margin-top:1rem;">
+                        <div class="parser"></div>
+                        <div class="inv"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>The Orchard</h3>
+                    <p>A slow space for ideas that are not ready to be forced into output yet. Plant an idea, then step back.</p>
+                    <div data-demo="orchard" class="orchard-box panel" style="margin-top:1rem;">
+                        <input type="text" aria-label="Seed thought" placeholder="An unfinished thought...">
+                        <div style="margin-top:1rem;"><button class="btn small alt" type="button" data-act="plant">Plant</button></div>
+                        <div class="plot">
+                            <svg viewBox="0 0 160 120" preserveAspectRatio="xMidYMid meet">
+                                <circle class="ring" cx="80" cy="70" r="46"/>
+                                <circle class="ringp" cx="80" cy="70" r="46" transform="rotate(-90 80 70)"/>
+                                <path class="plant" d="M80 118 C80 118 78 118 80 118" stroke="var(--moss)" stroke-width="4" fill="none"/>
+                                <path class="leaf1" d="M80 90 Q65 80 80 70 Q85 85 80 90" fill="var(--moss)" style="opacity:0; transition: opacity .5s;"/>
+                                <path class="leaf2" d="M80 80 Q95 70 80 60 Q75 75 80 80" fill="var(--moss)" style="opacity:0; transition: opacity .5s;"/>
+                                <circle class="seed" cx="80" cy="116" r="3" fill="#6d4c41"/>
+                                <circle class="bloom" cx="0" cy="0" r="5" fill="#f48fb1" style="opacity:0; transition: opacity .5s;"/>
+                            </svg>
+                        </div>
+                        <div class="orch-msg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agent-template" class="band moss">
+        <div class="wrap">
+            <h2 class="sec-head">The Agent Template</h2>
+            <p class="lede">While the Hypervisor shapes the cognitive reality of the conversation, the Agent Template provides the durable scaffolding for the repository. Together, they prevent context drift across short human and coding-agent sessions.</p>
+            
+            <div class="three-col" style="margin-top: 3rem;">
+                <div class="rule-card">
+                    <h3>AGENTS.md</h3>
+                    <p>Canonical instructions. Import this into tool-specific configurations so instructions cannot drift.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>docs/HANDOFF.md</h3>
+                    <p>The save point. Records exactly what is true right now to seamlessly resume sessions across agents.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>ROADMAP.md</h3>
+                    <p>The plan. Keeps track of planned work, active tasks, and what has been completed. IDs stay stable.</p>
+                </div>
+            </div>
+            
+            <div class="panel" style="margin-top: 3rem; background: var(--paper);">
+                <h3>The Information Lifecycle</h3>
+                <div class="split" style="margin-top: 1.5rem;">
+                    <div>
+                        <ul class="not-list">
+                            <li>Do not leave empty ceremony. Delete optional documents that do not earn their upkeep.</li>
+                            <li>Do not narrate exhaustion. We perform it.</li>
+                            <li>Do not renumber roadmap IDs after other documents cite them.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="yes-list">
+                            <li>Rewrite current truth. Documents like architecture describe the repo right now.</li>
+                            <li>Append history. Decisions and changelogs preserve why changes happened.</li>
+                            <li>Run verification. Ensure automated consistency with tools/check_docs.py.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap" style="text-align: center;">
+            <p>The Hypervisor | A framework for Volatile Semantic Leverage</p>
+            <p style="margin-top:1rem;"><a href="https://github.com/aedmark/the-hypervisor">View GitHub Repository</a></p>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
