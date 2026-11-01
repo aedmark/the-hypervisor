@@ -118,7 +118,7 @@
     dreamEl.classList.add('show');
     document.body.classList.add('asleep');
     energy = 100; paintEnergy();
-    $('button', dreamEl).onclick = function () { dreamEl.classList.remove('show'); };
+    $('button', dreamEl).onclick = function () { wake(); };
     $('button', dreamEl).focus();
     try { localStorage.setItem('hv-asleep', '1'); } catch (e) {}
     var sb = $('.sleep-btn'); if (sb) sb.setAttribute('aria-pressed', 'true');
@@ -136,7 +136,7 @@
   var typed = '';
   document.addEventListener('keydown', function (e) {
     if (/^(INPUT|TEXTAREA)$/.test((e.target.tagName || ''))) return;
-    if (e.key === 'Escape' && dreamEl && dreamEl.classList.contains('show')) { dreamEl.classList.remove('show'); return; }
+    if (e.key === 'Escape' && dreamEl && dreamEl.classList.contains('show')) { wake(); return; }
     if (e.key.length === 1) { typed = (typed + e.key.toLowerCase()).slice(-6); if (typed === '/sleep') toggleSleep(); }
   });
   try { if (localStorage.getItem('hv-asleep') === '1') { document.body.classList.add('asleep'); var sb0 = $('.sleep-btn'); if (sb0) sb0.textContent = '/wake'; } } catch (e) {}
@@ -383,12 +383,12 @@
   var quest = $('[data-demo="quest"]');
   if (quest) {
     var ITEMS = [
-      { id: 'chicken', ico: '🐔', name: 'Rubber chicken' },
-      { id: 'pulley', ico: '⚙️', name: 'Pulley' },
-      { id: 'email', ico: '✉️', name: 'Email' },
-      { id: 'door', ico: '🚪', name: 'Locked door' },
-      { id: 'jar', ico: '🫙', name: 'Jar of two truths' },
-      { id: 'lamp', ico: '🕯️', name: 'Lamp' }
+      { id: 'chicken', ico: 'CHK', name: 'Rubber chicken' },
+      { id: 'pulley', ico: 'PUL', name: 'Pulley' },
+      { id: 'email', ico: 'EML', name: 'Email' },
+      { id: 'door', ico: 'DOR', name: 'Locked door' },
+      { id: 'jar', ico: 'JAR', name: 'Jar of two truths' },
+      { id: 'lamp', ico: 'LMP', name: 'Lamp' }
     ];
     var COMBO = {
       'chicken+pulley': ['It works. Nobody, including Benedict, can say why. Jester takes a bow.', 'quest:chicken'],
