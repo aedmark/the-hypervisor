@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7f2637">
+  <meta name="description" content="Enter a phrase. Receive a deterministic audiovisual omen composed in LOLCODE.">
+  <title>HAI, ORACLE!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#oracle-controls">Skip to the oracle</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <main class="oracle-cabinet">
+    <header class="masthead">
+      <span class="folio">VOL. 01 · Nº 17</span>
+      <a class="wordmark" href="#" aria-label="HAI, ORACLE! home">
+        <span class="prompt-mark" aria-hidden="true">✦</span>
+        HAI, ORACLE!
+        <span class="prompt-mark" aria-hidden="true">✦</span>
+      </a>
+      <button class="icon-button" id="sound-toggle" type="button" aria-pressed="false" aria-label="Mute sound">
+        <span class="sound-on" aria-hidden="true">SOUND: ON</span>
+        <span class="sound-off" aria-hidden="true">SOUND: OFF</span>
+      </button>
+    </header>
+
+    <section class="oracle-shell" aria-labelledby="invitation">
+      <div class="introduction">
+        <p class="eyebrow">THE SOCIETY FOR SYNTHETIC OMENS PRESENTS</p>
+        <h1 id="invitation">THE ORACLE<br><em>IS IN RESIDENCE</em></h1>
+        <p class="dek">One phrase enters. One impossible creature appears.<br>The music will repeat until dismissed.</p>
+      </div>
+
+      <div class="vision-stage">
+        <span class="stage-marker stage-marker-left">LIVE SPECIMEN</span>
+        <span class="stage-marker stage-marker-right">CHAMBER 01</span>
+        <canvas id="vision" aria-label="The oracle's animated audiovisual creature"></canvas>
+        <p class="stage-caption">A PRIVATE APPARITION FOR THE PRESENT OBSERVER</p>
+      </div>
+
+      <form id="oracle-controls" class="summon-form">
+        <label for="phrase">SUBMIT ONE PERFECTLY ORDINARY PHRASE</label>
+        <div class="input-row">
+          <input id="phrase" name="phrase" type="text" maxlength="72" autocomplete="off"
+                 placeholder="the moon owes me five dollars" required>
+          <button class="summon-button" type="submit">
+            <span>SUMMON THE ORACLE</span>
+            <span aria-hidden="true">✦</span>
+          </button>
+        </div>
+        <div class="form-foot">
+          <button class="text-button" id="surprise" type="button">SELECT A PHRASE FOR ME</button>
+          <span>IDENTICAL WORDS PRODUCE AN IDENTICAL APPARITION.</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="reading" id="reading" aria-live="polite" aria-atomic="true">
+      <div>
+        <p class="reading-label">CURRENT APPARITION</p>
+        <h2 id="creature-name">THE ORACLE IS LISTENING</h2>
+      </div>
+      <div class="score-card" aria-label="Generated score">
+        <span><b id="score-pulse">---</b> BPM</span>
+        <span><b id="score-wave">---</b> WAVE</span>
+        <span><b id="score-form">---</b> FORM</span>
+        <span><b id="score-melody">---</b> MOTIF</span>
+      </div>
+      <div class="volume-control">
+        <div class="volume-heading">
+          <label for="master-volume">MASTER VOLUME</label>
+          <output id="volume-value" for="master-volume">82%</output>
+        </div>
+        <input id="master-volume" type="range" min="0" max="100" value="82" step="1">
+      </div>
+      <button class="replay-button" id="replay" type="button" disabled>
+        RESTART THE MELODY <span aria-hidden="true">↻</span>
+      </button>
+    </section>
+
+    <footer>
+      <span>COMPOSED IN LOLCODE 1.2 · EST. 2026</span>
+      <span id="status" role="status">AWAITING INPUT</span>
+      <a href="src/oracle.lol">INSPECT THE SPELL</a>
+    </footer>
+  </main>
+
+  <noscript>HAI ORACLE needs JavaScript to interpret its LOLCODE spell and render the omen.</noscript>
+  <script type="module" src="src/app.mjs"></script>
+</body>
+</html>
