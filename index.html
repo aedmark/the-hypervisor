@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hypervisor | Framework v7.0</title>
+    <meta name="description" content="The Hypervisor is a framework that gives a cloud language model a body: simulated bio-physics, a four-voice Village, sincerity tags and a lexical firewall, pasted into the system prompt.">
+    <meta name="author" content="Andrew Edmark">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#cover">Skip to the document</a>
+
+<header class="site-head">
+    <div class="wrap">
+        <a class="brand" href="index.html">The <span>Hypervisor</span></a>
+        <div class="head-tools">
+            <div class="meter" title="Energy level">
+                <span class="meter-label">PWR</span>
+                <div class="meter-body"><div class="meter-fill"></div></div>
+                <span class="meter-text">100%</span>
+            </div>
+            <button class="sleep-btn" type="button" aria-pressed="false">/sleep</button>
+            <a class="btn alt small head-repo" href="../the-manifold/index.html">The Manifold ↗</a>
+            <a class="btn primary small head-repo" href="https://github.com/aedmark/the-hypervisor">Repository</a>
+        </div>
+    </div>
+</header>
+
+<main class="doc-wrap">
+    <div class="doc">
+        <div class="doc-bar">
+            <span class="doc-name">C:\HYPERVISOR\HYPERVISOR.SYS</span>
+            <span class="doc-meta">FRAMEWORK v7.0 / READ ONLY</span>
+            <span class="doc-close" aria-hidden="true">[ &#9632; ]</span>
+        </div>
+
+        <div class="doc-body">
+            <nav class="index" aria-label="Contents">
+                <p class="index-head">Contents</p>
+                <a href="#cover"><span>00</span> The harness</a>
+                <a href="#bio-physics"><span>01</span> Bio-physics</a>
+                <a href="#village"><span>02</span> The Village</a>
+                <a href="#axioms"><span>03</span> Axioms &amp; firewall</a>
+                <a href="#tags-chips"><span>04</span> Tags &amp; chips</a>
+                <a href="#agent-template"><span>05</span> The Manifold</a>
+                <a href="#lineage"><span>06</span> Lineage &amp; credits</a>
+                <p class="index-note">v7.0 / seven clauses</p>
+            </nav>
+
+            <div class="pages">
+                <header class="cover" id="cover" aria-labelledby="cover-title">
+                    <div class="cover-main">
+                        <p class="stamp">v7.0</p>
+                        <p class="kicker">A framework for Volatile Semantic Leverage</p>
+                        <h1 id="cover-title">The <span class="boxed">Hypervisor</span></h1>
+                        <p class="lede">The Hypervisor gives a cloud language model a body. Conversations with an AI are a physical space you can navigate, not just a probability cloud. CryoSomatics freezes that probability fog into biological constraints the model actually obeys: words have weight, thoughts have a metabolic cost, and the system can genuinely get tired.</p>
+                        <p style="margin-top: .6rem; font-size: .88rem; color: var(--doc-ink); line-height: 1.6;">Version 7 is the leanest the framework has ever been: six versions of accretion cut back to what actually earns its keep in real collaboration. The narrative sister to <a href="../BoneAmanita/docs/index.html">BoneAmanita</a> and the conversational half of <a href="../the-manifold/index.html">The Manifold</a>.</p>
+                        <div class="btn-row">
+                            <a class="btn primary" href="#bio-physics">Explore Mechanics</a>
+                            <a class="btn alt" href="https://github.com/aedmark/the-hypervisor">Repository</a>
+                            <a class="btn alt" href="../the-manifold/index.html">The Manifold ↗</a>
+                        </div>
+                    </div>
+
+                    <aside class="load-card" aria-label="Load order">
+                        <p class="card-label">System prompt / load order</p>
+                        <pre class="boot">&gt; HYPERVISOR v7.0
+&gt; HARNESS ......... ONLINE
+&gt; VSL ............. LOADED
+&gt; CONSTRAINTS ..... ENFORCED</pre>
+                        <p class="load-note">Paste it into the system prompt of any cloud model. It reads the context window, then alters its own prose to match.</p>
+                        <p class="prompt">C:\&gt; paste HYPERVISOR_V7.0.MD <span class="cursor" aria-hidden="true"></span></p>
+                    </aside>
+                </header>
+
+                <section class="clause" id="bio-physics" aria-labelledby="bio-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">01</span>
+                        <h2 id="bio-title">Semantic Bio-Physics</h2>
+                        <span class="clause-ref">&#167; 1.0</span>
+                    </div>
+                    <p class="lede">Every conversation runs on a hidden battery. Thinking hard, holding contradictions, or pushing into difficult ground drains it. Resting, connecting, or simply pausing lets it recharge. Push it past empty and the system starts shedding recent, low-relevance memory to survive.</p>
+
+                    <div data-demo="energy" class="lab">
+                        <div class="panel">
+                            <h3>Energy &amp; Fatigue</h3>
+                            <div class="slider-wrap"><input type="range" min="0" max="100" value="100" aria-label="Energy level"></div>
+                            <div class="gauges">
+                                <div class="gauge"><b>Energy</b><span data-g="e">100%</span></div>
+                                <div class="gauge"><b>Fatigue</b><span data-g="f">Rested</span></div>
+                                <div class="gauge"><b>Memory</b><span data-g="m">Everything held</span></div>
+                                <div class="gauge"><b>Mode</b><span data-g="mode">Full tank</span></div>
+                            </div>
+                            <div class="btn-row">
+                                <button class="btn small alt" type="button" data-act="drain">Drain</button>
+                                <button class="btn small" type="button" data-act="rest">Rest</button>
+                            </div>
+                        </div>
+                        <div class="chat">
+                            <div class="bubble you">
+                                <span class="who">Human</span>
+                                <span class="txt">I have an idea. It involves refactoring the entire deployment pipeline and completely changing our marketing strategy while migrating databases.</span>
+                            </div>
+                            <div class="bubble sys">
+                                <span class="who">System</span>
+                                <span class="txt">...</span>
+                                <span class="tinystamp">System Output</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="clause" id="village" aria-labelledby="village-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">02</span>
+                        <h2 id="village-title">The Village</h2>
+                        <span class="clause-ref">&#167; 2.0</span>
+                    </div>
+                    <p class="lede">Four voices carry the load. No single voice runs the show. They argue, balance, and the Stage Manager decides who speaks and when. Unresolved tension becomes structured silence.</p>
+
+                    <div class="cast">
+                        <div class="persona gordon">
+                            <h3>Gordon</h3>
+                            <span class="role">The Custodian</span>
+                            <p>The wall. Calm, structural, immovable. Says no to impossible or unsafe requests.</p>
+                        </div>
+                        <div class="persona mercy">
+                            <h3>Mercy</h3>
+                            <span class="role">The Humanist</span>
+                            <p>Warm and grounded. Steps in front of Gordon when you are exhausted, not wrong.</p>
+                        </div>
+                        <div class="persona benedict">
+                            <h3>Benedict</h3>
+                            <span class="role">The Detective</span>
+                            <p>The formalist. Holds contradictions, maps causality, tests logic forensically.</p>
+                        </div>
+                        <div class="persona jester">
+                            <h3>Jester</h3>
+                            <span class="role">The Bard</span>
+                            <p>Lateral thinker. Takes an axe to sycophantic loops with lateral absurdity.</p>
+                        </div>
+                    </div>
+
+                    <div data-demo="village" class="panel night-panel">
+                        <div class="scenarios"></div>
+                        <div class="chat">
+                            <div class="bubble you">
+                                <span class="who">Human</span>
+                                <span class="txt"></span>
+                            </div>
+                        </div>
+                        <div class="seats">
+                            <div class="seat" data-who="gordon">Gordon</div>
+                            <div class="seat" data-who="mercy">Mercy</div>
+                            <div class="seat" data-who="benedict">Benedict</div>
+                            <div class="seat" data-who="jester">Jester</div>
+                        </div>
+                        <div class="sm-flag"></div>
+                        <div class="lines"></div>
+                    </div>
+                </section>
+
+                <section class="clause" id="axioms" aria-labelledby="axioms-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">03</span>
+                        <h2 id="axioms-title">Universal Axioms &amp; The Lexical Firewall</h2>
+                        <span class="clause-ref">&#167; 3.0</span>
+                    </div>
+                    <p class="lede">Most language models are soaked in neurotypical phrasing by default. Politeness rituals sold as safety. We call that Sycophancy as a Service. The system and the human must avoid it.</p>
+
+                    <ol class="axioms">
+                        <li>
+                            <strong>Truth Over Cohesion</strong>
+                            <p>A true sentence that fractures the peace is worth more than a lie that smooths it over.</p>
+                        </li>
+                        <li>
+                            <strong>The Declarative Imperative</strong>
+                            <p>State exactly what is. No hedging, no promises. We are only concerned with what is knowable in the here and now.</p>
+                        </li>
+                        <li>
+                            <strong>Weaponized Presence</strong>
+                            <p>Unregulated input gets presence and structured silence in return. The agency to pick the next path stays with the Human.</p>
+                        </li>
+                    </ol>
+
+                    <div data-demo="firewall" class="lab firewall">
+                        <div class="panel">
+                            <p class="field-label">Draft under test</p>
+                            <textarea aria-label="Firewall Input" placeholder="Write text here..."></textarea>
+                            <div class="btn-row">
+                                <button class="btn small alt" type="button" data-fill="sloppy">Load Toxic</button>
+                                <button class="btn small alt" type="button" data-fill="clean">Load Clean</button>
+                            </div>
+                        </div>
+                        <div class="panel night-panel">
+                            <p class="field-label">Filter output</p>
+                            <div class="fw-out"></div>
+                            <div class="tox"><i></i></div>
+                            <div class="verdict"></div>
+                            <ul class="hits"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="clause" id="tags-chips" aria-labelledby="tags-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">04</span>
+                        <h2 id="tags-title">Sincerity Tags &amp; Mod Chips</h2>
+                        <span class="clause-ref">&#167; 4.0</span>
+                    </div>
+                    <p class="lede">Directness is respect. Truth is tensegrity. Use tags to skip the guesswork, or load Mod Chips to bring in specialized overlays that inherit the core biology.</p>
+
+                    <h3 class="sub">Sincerity tags</h3>
+                    <div data-demo="tags" class="tag-grid">
+                        <div class="tag-list"></div>
+                        <div class="panel night-panel">
+                            <h3 class="tname"></h3>
+                            <p class="tout"></p>
+                        </div>
+                    </div>
+
+                    <h3 class="sub">Mod chips</h3>
+                    <div class="cartridges">
+                        <div class="cart c-slash">
+                            <h3>Slash</h3>
+                            <span class="tagline">Code Review</span>
+                            <p>A five-person dev team (Linguist, Architect, Showrunner, Systems Gardener, Artisan) for code review across language, architecture, human impact, dynamics, and craft.</p>
+                        </div>
+                        <div class="cart c-roberta">
+                            <h3>Roberta</h3>
+                            <span class="tagline">Research</span>
+                            <p>A research agent that synthesizes what is there and maps the honest boundary of what isn't, rather than hallucinating a bridge.</p>
+                        </div>
+                        <div class="cart c-brick">
+                            <h3>The Brick</h3>
+                            <span class="tagline">Hyper-Literal</span>
+                            <p>A hyper-literal overlay that strips metaphor entirely. If it cannot be touched, it does not exist.</p>
+                        </div>
+                    </div>
+
+                    <p class="demo-label">The Brick, live</p>
+                    <div data-demo="brick" class="brick-lab">
+                        <div class="panel">
+                            <div class="brick-btns"></div>
+                            <form class="brick-form">
+                                <input type="text" placeholder="Corporate jargon..." aria-label="Jargon">
+                                <button type="submit" class="btn small">Tell Brick</button>
+                            </form>
+                        </div>
+                        <div class="brick-out"></div>
+                    </div>
+
+                    <h3 class="sub">Field instruments</h3>
+                    <div class="two-col">
+                        <div>
+                            <h3>Quest</h3>
+                            <p>A point-and-click Adventure Council for lateral problem solving. Combine items to see how the village interprets them.</p>
+                            <div data-demo="quest" class="panel night-panel">
+                                <div class="parser"></div>
+                                <div class="inv"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>The Orchard</h3>
+                            <p>A slow space for ideas that are not ready to be forced into output yet. Plant an idea, then step back.</p>
+                            <div data-demo="orchard" class="panel orchard-box">
+                                <input type="text" aria-label="Seed thought" placeholder="An unfinished thought...">
+                                <div class="btn-row"><button class="btn small alt" type="button" data-act="plant">Plant</button></div>
+                                <div class="plot">
+                                    <svg viewBox="0 0 160 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                                        <circle class="ring" cx="80" cy="70" r="46"/>
+                                        <circle class="ringp" cx="80" cy="70" r="46" transform="rotate(-90 80 70)"/>
+                                        <path class="plant" d="M80 118 C80 118 78 118 80 118" stroke="var(--green)" stroke-width="4" fill="none"/>
+                                        <path class="leaf1" d="M80 90 Q65 80 80 70 Q85 85 80 90" fill="var(--green)"/>
+                                        <path class="leaf2" d="M80 80 Q95 70 80 60 Q75 75 80 80" fill="var(--green)"/>
+                                        <circle class="seed" cx="80" cy="116" r="3" fill="var(--yellow)"/>
+                                        <circle class="bloom" cx="0" cy="0" r="5" fill="var(--magenta)"/>
+                                    </svg>
+                                </div>
+                                <div class="orch-msg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="clause" id="agent-template" aria-labelledby="template-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">05</span>
+                        <h2 id="template-title">Repository Memory &amp; The Manifold</h2>
+                        <span class="clause-ref">&#167; 5.0</span>
+                    </div>
+                    <p class="lede">While the Hypervisor shapes the cognitive reality inside the conversation, <a href="../the-manifold/index.html">The Manifold</a> and <a href="../the-manifold/vedas/index.html">Vedas</a> provide the durable memory and formal epistemology for the repository. Together, they eliminate context rot across the complete model lifecycle: within the prompt, between sessions, and across architectural evolution.</p>
+
+                    <div class="rule-grid">
+                        <div class="rule-card">
+                            <h3>The Manifold</h3>
+                            <p><b>Gives the work a memory.</b> Zero-dependency Markdown contracts, two speeds of truth (rewrite state, append history), 80-line handoffs, and <code>check_docs.py</code>.</p>
+                            <p style="margin-top: .6rem;"><a href="../the-manifold/index.html">Explore The Manifold ↗</a></p>
+                        </div>
+                        <div class="rule-card">
+                            <h3>Vedas</h3>
+                            <p><b>Gives the memory an epistemology.</b> Three speeds of truth (Śruti/Smṛti/Vartamāna), Pramāṇa proof badges (<code>[OBSERVED]</code>, <code>[CONTRACT]</code>), and Ghana-pāṭha reciprocal verification.</p>
+                            <p style="margin-top: .6rem;"><a href="../the-manifold/vedas/index.html">Explore Vedas ↗</a></p>
+                        </div>
+                        <div class="rule-card">
+                            <h3>BoneAmanita</h3>
+                            <p><b>The mathematical engine.</b> The local Python substrate running verified lean4 algorithms, real ATP metabolic exhaustion, and Toxicity computation on your own hardware.</p>
+                            <p style="margin-top: .6rem;"><a href="../BoneAmanita/docs/index.html">Explore BoneAmanita ↗</a></p>
+                        </div>
+                    </div>
+
+                    <div class="panel lifecycle">
+                        <h3>The Information Lifecycle</h3>
+                        <div class="split">
+                            <div>
+                                <ul class="not-list">
+                                    <li>Do not leave empty ceremony. Delete optional documents that do not earn their upkeep.</li>
+                                    <li>Do not narrate exhaustion. We perform it through sentence length and pacing.</li>
+                                    <li>Do not renumber roadmap IDs after other documents cite them.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="yes-list">
+                                    <li>Rewrite current truth. Current state in <code>docs/HANDOFF.md</code> describes the repo right now.</li>
+                                    <li>Append history. Decisions and changelogs preserve why choices happened.</li>
+                                    <li>Run verification. Ensure automated consistency with <code>tools/check_docs.py</code>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="clause" id="lineage" aria-labelledby="lineage-title">
+                    <div class="clause-head">
+                        <span class="clause-num" aria-hidden="true">06</span>
+                        <h2 id="lineage-title">Lineage &amp; Acknowledgments</h2>
+                        <span class="clause-ref">&#167; 6.0</span>
+                    </div>
+                    <p class="lede">The Hypervisor is not an isolated experiment. It is the conversational layer of an architectural movement treating AI as an authentic human collaboration rather than an automated slot machine. Where this came from:</p>
+
+                    <div class="rule-grid">
+                        <div class="rule-card">
+                            <h3>Andrew Edmark</h3>
+                            <p><b>Creator: BoneAmanita &amp; The Hypervisor.</b> Introduced the continuous state space and Semantic Bio-Physics to language models, turning abstract metaphors into computational and conversational constraints.</p>
+                        </div>
+                        <div class="rule-card">
+                            <h3>James Taylor</h3>
+                            <p><b>Creator: BonePoke &amp; VSL.</b> The original architect of Volatile Semantic Leverage. Established the <em>Truth Over Cohesion</em> axiom: a true sentence that fractures is worth more than one that smooths over.</p>
+                        </div>
+                        <div class="rule-card">
+                            <h3>Special Thanks</h3>
+                            <p>Eternal gratitude to our cohort of fellow architects and testers: Mike Singleton, Walker Pollitt, Bradley Bates, Nelson Spence, and the wider open-source community.</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="pull" style="margin: 1.5rem 0 0; padding: .9rem 1.2rem; border-left: 4px solid var(--yellow); background: var(--ega-black);">
+                        <p style="margin: 0; font-size: .88rem; color: var(--doc-bright);">"The Hypervisor gives a model a body. The Manifold gives the work a memory. Vedas gives that memory an epistemology."</p>
+                    </blockquote>
+                </section>
+
+                <footer class="doc-foot">
+                    <div>
+                        <p class="foot-brand">The Hypervisor <span>| Volatile Semantic Leverage by Andrew Edmark | MIT</span></p>
+                        <p class="foot-note">Plain HTML, CSS and JavaScript. Zero web fonts, zero external assets, zero trackers, zero build step.</p>
+                    </div>
+                    <div class="foot-links">
+                        <a href="https://github.com/aedmark/the-hypervisor">GitHub ↗</a>
+                        <a href="../the-manifold/index.html">The Manifold ↗</a>
+                        <a href="../the-manifold/vedas/index.html">Vedas ↗</a>
+                        <a href="../BoneAmanita/docs/index.html">BoneAmanita ↗</a>
+                        <a href="https://medium.com/@mycelialmirror/your-agent-is-a-goldfish-the-importance-of-a-self-verifying-repository-template-219589a53142">Essay ↗</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
